@@ -14,7 +14,7 @@ class CustomButton extends StatelessWidget {
       this.textStyle,
       this.height});
   final String text;
-  final void Function() onPressed;
+  final void Function()? onPressed;
   final double verticalHieght;
   final double horizontalWidth;
   final Color color;

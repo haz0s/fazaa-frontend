@@ -1,6 +1,7 @@
 import 'package:fazaa/core/utils/colors.dart';
 import 'package:fazaa/core/utils/constats.dart';
 import 'package:fazaa/core/widgets/custom_button.dart';
+import 'package:fazaa/features/auth/login/presentation/views/login_page.dart';
 import 'package:flutter/material.dart';
 
 import '../../../../../core/utils/assets_data.dart';
@@ -49,7 +50,9 @@ class BoardingPageBody extends StatelessWidget {
             ),
             CustomButton(
                 text: "فلنبدأ معاً",
-                onPressed: () {},
+                onPressed: () {
+                  Navigator.pushReplacementNamed(context, LoginPage.routName);
+                },
                 verticalHieght: KVerticalPadding,
                 horizontalWidth: KHorizontalPadding,
                 color: AppColors.primary)
