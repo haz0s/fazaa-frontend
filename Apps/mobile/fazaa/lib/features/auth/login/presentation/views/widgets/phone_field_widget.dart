@@ -14,19 +14,19 @@ class PhoneFieldWidget extends StatefulWidget {
 class _PhoneFieldWidgetState extends State<PhoneFieldWidget> {
   final FocusNode fNode = FocusNode();
   bool isFill = true;
-  Color fillColor = const Color(0xFFFBFBFE); // Changed to match background
+  Color fillColor = const Color(0xffF4F7FE);
 
   @override
   void initState() {
     fNode.addListener(() {
       if (fNode.hasFocus) {
         setState(() {
-          fillColor = Colors.white; // Change color when focused if needed
+          fillColor = Colors.white;
           isFill = false;
         });
       } else {
         setState(() {
-          fillColor = const Color(0xFFFBFBFE); // Background color
+          fillColor = const Color(0xffF4F7FE);
           isFill = true;
         });
       }
@@ -40,34 +40,26 @@ class _PhoneFieldWidgetState extends State<PhoneFieldWidget> {
       textDirection: TextDirection.ltr,
       child: Padding(
         padding: const EdgeInsets.symmetric(
-            vertical: KVerticalPadding, horizontal: 20 // Add horizontal padding
-            ),
+          vertical: 15,
+        ),
         child: PhoneFormField(
           controller: widget.controller,
           focusNode: fNode,
-
           countryButtonStyle: const CountryButtonStyle(
-              showDialCode: true,
-              showIsoCode: true,
-              showFlag: false,
-              flagSize: 16),
-          style: const TextStyle(color: Colors.black), // Text color
+            showDialCode: true,
+            showIsoCode: true,
+            showFlag: false,
+          ),
+          style: const TextStyle(color: Colors.black),
           decoration: InputDecoration(
             hintText: widget.hintText,
+            hintStyle: const TextStyle(color: Colors.grey),
             focusedBorder: OutlineInputBorder(
-              borderSide:
-                  const BorderSide(color: Color(0xFFD1D5DB)), // Lighter gray
-              borderRadius: BorderRadius.circular(kBorderRadius),
-            ),
-            enabledBorder: OutlineInputBorder(
-              borderSide:
-                  const BorderSide(color: Color(0xFFD1D5DB)), // Lighter gray
+              borderSide: const BorderSide(color: Color(0xFFD1D5DB)),
               borderRadius: BorderRadius.circular(kBorderRadius),
             ),
             filled: true,
             fillColor: fillColor,
-            contentPadding: const EdgeInsets.symmetric(
-                vertical: KVerticalPadding, horizontal: KHorizontalPadding),
             border: OutlineInputBorder(
                 borderRadius: BorderRadius.circular(kBorderRadius),
                 borderSide: BorderSide.none),

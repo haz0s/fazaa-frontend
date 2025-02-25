@@ -4,11 +4,12 @@ import 'package:fazaa/core/utils/functions.dart';
 import 'package:fazaa/core/widgets/custom_button.dart';
 import 'package:fazaa/features/auth/login/presentation/views/number_verification_page.dart';
 import 'package:fazaa/features/auth/login/presentation/views/widgets/phone_field_widget.dart';
-import 'package:fazaa/features/auth/login/presentation/views/widgets/top_circle_avater.dart';
+import 'package:fazaa/features/auth/widgets/top_circle_avater.dart';
 import 'package:flutter/material.dart';
 import 'package:phone_form_field/phone_form_field.dart';
 
 import '../../../../../core/utils/styles.dart';
+import '../../../register/presentation/views/register_type_page.dart';
 
 class LoginPage extends StatefulWidget {
   const LoginPage({super.key});
@@ -74,7 +75,7 @@ class _LoginPageState extends State<LoginPage> {
           PhoneFieldWidget(controller: controller),
           TextButton(
             onPressed: () {
-              //Navigator.pushNamed(context, RegisterPage.routeName);
+              Navigator.pushNamed(context, RegisterTypePage.routeName);
             },
             child: Text("ليس لديك حساب؟",
                 style: Styles.textStyle16.copyWith(

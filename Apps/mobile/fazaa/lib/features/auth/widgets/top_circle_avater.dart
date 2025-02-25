@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import '../../../../../../core/utils/colors.dart';
+import '../../../core/utils/colors.dart';
 
 class TopCircleAvater extends StatelessWidget {
   const TopCircleAvater({super.key, required this.icon});
