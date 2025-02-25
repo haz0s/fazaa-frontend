@@ -1,4 +1,4 @@
-import 'package:fazaa/main.dart';
+import 'package:fazaa/features/boarding/presentation/views/boarding_page.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/scheduler.dart';
 import 'dart:async';
@@ -40,10 +40,7 @@ class _SplashPageBodyState extends State<SplashPageBody>
       _controller.forward();
     });
     Timer(const Duration(milliseconds: 3500), () {
-      Navigator.pushReplacement(
-          context,
-          MaterialPageRoute(
-              builder: (context) => const MyHomePage(title: "home page")));
+      Navigator.pushReplacementNamed(context, BoardingPage.routName);
     });
   }
 
