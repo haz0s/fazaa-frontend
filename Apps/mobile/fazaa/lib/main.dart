@@ -1,3 +1,5 @@
+import 'package:fazaa/core/utils/colors.dart';
+import 'package:fazaa/features/splash/presentation/views/splash_page.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -11,10 +13,13 @@ class FazaaApp extends StatelessWidget {
     return MaterialApp(
       title: 'Flutter Demo',
       theme: ThemeData(
+        scaffoldBackgroundColor: AppColors.background,
+        colorScheme: ColorScheme.fromSeed(seedColor: AppColors.primary),
         useMaterial3: true,
+        fontFamily: "cocon-next-arabic",
       ),
       debugShowCheckedModeBanner: false,
-      home: const MyHomePage(title: 'Flutter Demo Home Page'),
+      home: const SplashPage(),
     );
   }
 }
