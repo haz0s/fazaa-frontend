@@ -72,7 +72,10 @@ class _LoginPageState extends State<LoginPage> {
               ),
             ),
           ),
-          PhoneFieldWidget(controller: controller),
+          Padding(
+            padding: const EdgeInsets.symmetric(horizontal: 10),
+            child: PhoneFieldWidget(controller: controller),
+          ),
           TextButton(
             onPressed: () {
               Navigator.pushNamed(context, RegisterTypePage.routeName);

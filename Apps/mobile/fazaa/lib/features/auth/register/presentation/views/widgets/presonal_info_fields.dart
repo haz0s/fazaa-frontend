@@ -40,7 +40,7 @@ class PresonalInfoFields extends StatelessWidget {
           controller: _nationalIdController,
           keyboardType: TextInputType.number,
           validatorFun: (value) =>
-              Validator.validate(value, ValidationState.phoneNumber),
+              Validator.validate(value, ValidationState.normal),
         ),
         PhoneFieldWidget(
           controller: _phoneController,

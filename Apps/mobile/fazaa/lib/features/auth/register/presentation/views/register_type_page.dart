@@ -72,10 +72,8 @@ class _RegisterTypePageState extends State<RegisterTypePage> {
                   text: "متابعة",
                   onPressed: _selectedType != null
                       ? () {
-                          _selectedType == "customer"
-                              ? Navigator.pushNamed(
-                                  context, CustomerRegisterPage.routeName)
-                              : null;
+                          Navigator.pushNamed(
+                              context, CustomerRegisterPage.routeName);
                         }
                       : null,
                   verticalHieght: 16,

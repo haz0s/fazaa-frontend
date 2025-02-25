@@ -1,6 +1,7 @@
 import 'package:fazaa/core/utils/colors.dart';
 import 'package:fazaa/core/utils/constats.dart';
 import 'package:fazaa/core/widgets/custom_button.dart';
+import 'package:fazaa/features/auth/login/presentation/views/number_verification_page.dart';
 import 'package:flutter/material.dart';
 import 'package:phone_form_field/phone_form_field.dart';
 
@@ -93,7 +94,11 @@ class _CustomerRegisterPageState extends State<CustomerRegisterPage> {
         text: "تسجيل",
         onPressed: () {
           if (_formKey.currentState!.validate()) {
-            // Handle registration logic
+            Navigator.pushReplacement(
+                context,
+                MaterialPageRoute(
+                    builder: (context) => NumberVerificationPage(
+                        phoneNumber: _phoneController.value.nsn)));
           }
         },
         verticalHieght: 16,

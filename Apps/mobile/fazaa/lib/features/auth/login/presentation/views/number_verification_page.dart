@@ -82,7 +82,7 @@ class _NumberVerificationPageState extends State<NumberVerificationPage> {
               Directionality(
                 textDirection: TextDirection.ltr,
                 child: SingleChildScrollView(
-                  scrollDirection: Axis.vertical,
+                  scrollDirection: Axis.horizontal,
                   child: OtpTextField(
                     onSubmit: (value) {
                       setState(() => _otpValue = value);
