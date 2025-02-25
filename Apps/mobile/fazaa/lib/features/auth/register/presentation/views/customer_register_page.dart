@@ -28,16 +28,16 @@ class _CustomerRegisterPageState extends State<CustomerRegisterPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: SafeArea(
-        child: SingleChildScrollView(
-          child: Form(
-            key: _formKey,
-            child: Column(
-              children: [
-                const CustomAppBar(title: "أنشاء الحساب", back_btn: true),
-                Padding(
+        child: Form(
+          key: _formKey,
+          child: Column(
+            children: [
+              const CustomAppBar(title: "أنشاء الحساب", back_btn: true),
+              Expanded(
+                child: Padding(
                   padding:
                       const EdgeInsets.symmetric(horizontal: 20, vertical: 10),
-                  child: Column(
+                  child: ListView(
                     children: [
                       const SizedBox(height: kSizedBoxHeight),
                       PresonalInfoFields(
@@ -52,8 +52,8 @@ class _CustomerRegisterPageState extends State<CustomerRegisterPage> {
                     ],
                   ),
                 ),
-              ],
-            ),
+              )
+            ],
           ),
         ),
       ),
