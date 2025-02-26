@@ -90,7 +90,7 @@ class _CustomBottomNavBarState extends State<CustomBottomNavBar>
           tabBarHeight: 60,
           textStyle: const TextStyle(
             fontSize: 15,
-            color: AppColors.blackText,
+            color: AppColors.primary,
             fontWeight: FontWeight.bold,
           ),
           onTabItemSelected: (index) {

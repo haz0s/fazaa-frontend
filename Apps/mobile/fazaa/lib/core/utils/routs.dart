@@ -1,4 +1,4 @@
-import 'package:fazaa/core/widgets/custom_nav_bar.dart';
+import 'package:fazaa/core/widgets/custom_bottom_nav_bar.dart';
 import 'package:fazaa/features/auth/login/presentation/views/number_verification_page.dart';
 import 'package:fazaa/features/auth/register/presentation/views/register_type_page.dart';
 import 'package:fazaa/features/boarding/presentation/views/boarding_page.dart';

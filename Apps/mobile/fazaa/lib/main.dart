@@ -1,5 +1,4 @@
 import 'package:fazaa/core/utils/colors.dart';
-import 'package:fazaa/core/widgets/custom_nav_bar.dart';
 import 'package:fazaa/features/splash/presentation/views/splash_page.dart';
 import 'package:flutter/material.dart';
 
@@ -23,7 +22,7 @@ class FazaaApp extends StatelessWidget {
       ),
       debugShowCheckedModeBanner: false,
       // home: const SplashPage(),
-      initialRoute: CustomBottomNavBar.routeName,
+      initialRoute: SplashPage.routName,
       routes: Routes.routes,
     );
   }

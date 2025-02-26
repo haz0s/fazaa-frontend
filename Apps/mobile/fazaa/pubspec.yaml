@@ -12,6 +12,7 @@ dependencies:
   dio: ^5.8.0+1
   flutter:
     sdk: flutter
+  flutter_launcher_icons: ^0.14.3
   flutter_otp_text_field: ^1.5.0+1
   get_it: ^8.0.3
   motion_tab_bar: ^2.0.4
@@ -20,6 +21,17 @@ dependencies:
   shared_preferences: ^2.5.2
 
 dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+flutter_launcher_icons:
+  android: "launcher_icon"
+  ios: true
+  image_path: "assets/icons/fazaa-icon.png"
+  min_sdk_android: 21
+  adaptive_icon_foreground: "assets/icons/fazaa-icon.png"
+  adaptive_icon_background: "#FFFFFF"
+
   flutter_lints: ^4.0.0
   flutter_test:
     sdk: flutter
@@ -27,6 +39,7 @@ flutter:
   uses-material-design: true
   assets:
     - assets/images/
+    - assets/icons/
 
   fonts:
     - family: cocon-next-arabic

@@ -2,9 +2,9 @@ import 'dart:async';
 import 'dart:developer';
 
 import 'package:fazaa/core/widgets/custom_button.dart';
+import 'package:fazaa/core/widgets/custom_bottom_nav_bar.dart';
 import 'package:fazaa/features/auth/widgets/top_circle_avater.dart';
 import 'package:fazaa/features/auth/login/presentation/views/widgets/verification_msg.dart';
-import 'package:fazaa/features/home/presentation/views/home_page.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_otp_text_field/flutter_otp_text_field.dart';
 
@@ -130,7 +130,7 @@ class _NumberVerificationPageState extends State<NumberVerificationPage> {
                     ? null
                     : () {
                         Navigator.pushReplacementNamed(
-                            context, HomePage.routeName);
+                            context, CustomBottomNavBar.routeName);
                       },
                 verticalHieght: KVerticalPadding,
                 horizontalWidth: KHorizontalPadding,
