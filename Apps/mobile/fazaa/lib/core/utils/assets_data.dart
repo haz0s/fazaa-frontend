@@ -8,4 +8,5 @@ class AssetsData {
   static String paintImage = "assets/images/paint.jpg";
   static String plumberImage = "assets/images/plumber.jpg";
   static String techImage = "assets/images/tech.jpg";
+  static String fazaaLogo = "assets/images/logo-fazaa.PNG";
 }

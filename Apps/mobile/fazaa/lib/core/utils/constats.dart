@@ -1,4 +1,4 @@
-String lang = "en";
+String lang = "ar";
 const double kBorderRadius = 15;
 const double kSizedBoxHeight = 25;
 const double KVerticalPadding = 15;

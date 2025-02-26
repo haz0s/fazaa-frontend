@@ -1,6 +1,7 @@
 import 'dart:async';
 import 'dart:developer';
 
+import 'package:fazaa/core/utils/functions.dart';
 import 'package:fazaa/core/widgets/custom_button.dart';
 import 'package:fazaa/core/widgets/custom_bottom_nav_bar.dart';
 import 'package:fazaa/features/auth/widgets/top_circle_avater.dart';
@@ -129,8 +130,12 @@ class _NumberVerificationPageState extends State<NumberVerificationPage> {
                 onPressed: _otpValue.length != 5
                     ? null
                     : () {
-                        Navigator.pushReplacementNamed(
-                            context, CustomBottomNavBar.routeName);
+                        showSuccessDialog(
+                            context: context,
+                            title: "!الرمز صحيح",
+                            desc: "تم التحقق من الرمز يمكنك المتابع الان",
+                            onOkPressed: () => Navigator.pushReplacementNamed(
+                                context, CustomBottomNavBar.routeName));
                       },
                 verticalHieght: KVerticalPadding,
                 horizontalWidth: KHorizontalPadding,

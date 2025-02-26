@@ -36,6 +36,26 @@ void messages(BuildContext context, String error, Color c, {int msgTime = 2}) {
   ));
 }
 
+void showSuccessDialog({
+  required BuildContext context,
+  required String title,
+  required String desc,
+  required void Function() onOkPressed,
+}) async {
+  await AwesomeDialog(
+    context: context,
+    dialogType: DialogType.success,
+    animType: AnimType.scale,
+    title: title,
+    desc: desc,
+    descTextStyle: const TextStyle(fontSize: 16),
+    btnOkText: "المتابعة",
+    buttonsTextStyle: const TextStyle(color: Colors.white),
+    btnOkOnPress: onOkPressed,
+    dismissOnTouchOutside: false,
+  ).show();
+}
+
 void showAwesomeDialog({
   required BuildContext context,
   required DialogType dialogType,
